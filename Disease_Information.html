@@ -1,0 +1,3423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sobat Health - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-text mx-3">Sobat Health</div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Home</span></a
+          >
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <!-- Heading -->
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a
+            class="nav-link collapsed"
+            href="#"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+            <i class="fas fa-fw fa-hospital"></i>
+            <span>Layanan</span>
+          </a>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordionSidebar"
+          >
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Menu:</h6>
+              <a class="collapse-item" href="Konsultasi.html">Konsultasi</a>
+              <a class="collapse-item" href="Rekam_Medis.html">Rekam Medis</a>
+              <a class="collapse-item" href="Pharmacy.html">Pharmacy</a>
+
+              <a class="collapse-item" href="Payment.html">Payment</a>
+              <a class="collapse-item" href="Disease_Information.html"
+                >Disease Information</a
+              >
+            </div>
+          </div>
+        </li>
+
+        <!-- Divider -->
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control bg-light border-0 small"
+                  placeholder="Search "
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div
+                  class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Putri Nur Rahma</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/undraw_profile.svg"
+                  />
+                </a>
+                <!-- Dropdown - User Information -->
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Konsultasi</h1>
+            </div>
+            <div class="container p-5">
+              <div class="col-auto">
+                <label class="sr-only" for="inlineFormInputGroup"
+                  >Username</label
+                >
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">Cari</div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inlineFormInputGroup"
+                    placeholder="Nama Penyakit"
+                  />
+                </div>
+              </div>
+              <br />
+              <!-- DataTales Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">
+                    Tabel Penyakit
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table
+                      class="table table-bordered"
+                      id="dataTable"
+                      width="100%"
+                      cellspacing="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>Ablasi Retina</td>
+                        </tr>
+                        <tr>
+                          <td>Abses Anus</td>
+                        </tr>
+                        <tr>
+                          <td>Abses Gigi</td>
+                        </tr>
+                        <tr>
+                          <td>Abses Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Abses Paru</td>
+                        </tr>
+                        <tr>
+                          <td>Abses Payudara</td>
+                        </tr>
+                        <tr>
+                          <td>Achondroplasia</td>
+                        </tr>
+                        <tr>
+                          <td>Actinic Keratosis</td>
+                        </tr>
+                        <tr>
+                          <td>Acute Respiratory Distress Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Adenomiosis</td>
+                        </tr>
+                        <tr>
+                          <td>Adenovirus</td>
+                        </tr>
+                        <tr>
+                          <td>ADHD</td>
+                        </tr>
+                        <tr>
+                          <td>Afasia</td>
+                        </tr>
+                        <tr>
+                          <td>Agoraphobia</td>
+                        </tr>
+                        <tr>
+                          <td>Agranulositosis</td>
+                        </tr>
+                        <tr>
+                          <td>Akalasia</td>
+                        </tr>
+                        <tr>
+                          <td>Akantosis Nigrikans</td>
+                        </tr>
+                        <tr>
+                          <td>Akromegali</td>
+                        </tr>
+                        <tr>
+                          <td>Aktinomikosis</td>
+                        </tr>
+                        <tr>
+                          <td>Albinisme</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Dingin</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Kacang</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Makanan</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Obat</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Susu</td>
+                        </tr>
+                        <tr>
+                          <td>Alergi Telur</td>
+                        </tr>
+                        <tr>
+                          <td>Alkalosis</td>
+                        </tr>
+                        <tr>
+                          <td>Alkaptonuria</td>
+                        </tr>
+                        <tr>
+                          <td>Alopecia Areata</td>
+                        </tr>
+                        <tr>
+                          <td>Altitude Sickness</td>
+                        </tr>
+                        <tr>
+                          <td>Ambeien</td>
+                        </tr>
+                        <tr>
+                          <td>Ambiguous Genitalia</td>
+                        </tr>
+                        <tr>
+                          <td>Amebiasis</td>
+                        </tr>
+                        <tr>
+                          <td>Amenorrhea</td>
+                        </tr>
+                        <tr>
+                          <td>Amiloidosis</td>
+                        </tr>
+                        <tr>
+                          <td>Amnesia</td>
+                        </tr>
+                        <tr>
+                          <td>Amputasi</td>
+                        </tr>
+                        <tr>
+                          <td>Amyotrophic Lateral Sclerosis (ALS)</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia Aplastik</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia Defisiensi Besi</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia Defisiensi Vitamin B12 dan Folat</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia Hemolitik</td>
+                        </tr>
+                        <tr>
+                          <td>Anemia Sel Sabit</td>
+                        </tr>
+                        <tr>
+                          <td>Aneurisma Aorta</td>
+                        </tr>
+                        <tr>
+                          <td>Aneurisma Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Angin Duduk</td>
+                        </tr>
+                        <tr>
+                          <td>Angina Pektoris</td>
+                        </tr>
+                        <tr>
+                          <td>Angioedema</td>
+                        </tr>
+                        <tr>
+                          <td>Ankylosing Spondylitis</td>
+                        </tr>
+                        <tr>
+                          <td>Anoreksia Nervosa</td>
+                        </tr>
+                        <tr>
+                          <td>Anosmia</td>
+                        </tr>
+                        <tr>
+                          <td>Anthrax</td>
+                        </tr>
+                        <tr>
+                          <td>Anus Gatal</td>
+                        </tr>
+                        <tr>
+                          <td>Aritmia</td>
+                        </tr>
+                        <tr>
+                          <td>Arteriosklerosis</td>
+                        </tr>
+                        <tr>
+                          <td>Asbestosis</td>
+                        </tr>
+                        <tr>
+                          <td>Ascariasis</td>
+                        </tr>
+                        <tr>
+                          <td>Asidosis (Metabolik dan Respiratorik)</td>
+                        </tr>
+                        <tr>
+                          <td>Asites</td>
+                        </tr>
+                        <tr>
+                          <td>Asma</td>
+                        </tr>
+                        <tr>
+                          <td>Aspergillosis</td>
+                        </tr>
+                        <tr>
+                          <td>Aspirasi Mekonium</td>
+                        </tr>
+                        <tr>
+                          <td>Astigmatisme</td>
+                        </tr>
+                        <tr>
+                          <td>Ataksia</td>
+                        </tr>
+                        <tr>
+                          <td>Ataksia Friedreich</td>
+                        </tr>
+                        <tr>
+                          <td>Atelektasis</td>
+                        </tr>
+                        <tr>
+                          <td>Aterosklerosis</td>
+                        </tr>
+                        <tr>
+                          <td>Atresia Ani</td>
+                        </tr>
+                        <tr>
+                          <td>Atresia Bilier</td>
+                        </tr>
+                        <tr>
+                          <td>Atrial Fibrilasi</td>
+                        </tr>
+                        <tr>
+                          <td>Atrofi Otot</td>
+                        </tr>
+                        <tr>
+                          <td>Auditory Processing Disorder</td>
+                        </tr>
+                        <tr>
+                          <td>Autisme</td>
+                        </tr>
+                        <tr>
+                          <td>Avascular Necrosis</td>
+                        </tr>
+                        <tr>
+                          <td>BAB Berdarah</td>
+                        </tr>
+                        <tr>
+                          <td>Bakteremia</td>
+                        </tr>
+                        <tr>
+                          <td>Balanitis</td>
+                        </tr>
+                        <tr>
+                          <td>Barotrauma</td>
+                        </tr>
+                        <tr>
+                          <td>Batu Empedu</td>
+                        </tr>
+                        <tr>
+                          <td>Batu Ginjal</td>
+                        </tr>
+                        <tr>
+                          <td>Batu Kandung Kemih</td>
+                        </tr>
+                        <tr>
+                          <td>Batuk</td>
+                        </tr>
+                        <tr>
+                          <td>Batuk Berdarah</td>
+                        </tr>
+                        <tr>
+                          <td>Batuk Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Batuk Pilek</td>
+                        </tr>
+                        <tr>
+                          <td>Batuk Rejan</td>
+                        </tr>
+                        <tr>
+                          <td>Bau Mulut (Halitosis)</td>
+                        </tr>
+                        <tr>
+                          <td>Bell's Palsy</td>
+                        </tr>
+                        <tr>
+                          <td>Benjolan Payudara</td>
+                        </tr>
+                        <tr>
+                          <td>Berat Badan Berlebih</td>
+                        </tr>
+                        <tr>
+                          <td>Berat Badan Lahir Rendah</td>
+                        </tr>
+                        <tr>
+                          <td>Bercak Mongol</td>
+                        </tr>
+                        <tr>
+                          <td>Biang Keringat</td>
+                        </tr>
+                        <tr>
+                          <td>Bibir Sumbing</td>
+                        </tr>
+                        <tr>
+                          <td>Bidai Tulang Kering</td>
+                        </tr>
+                        <tr>
+                          <td>Biduran</td>
+                        </tr>
+                        <tr>
+                          <td>Binge Eating Disorder</td>
+                        </tr>
+                        <tr>
+                          <td>Bintitan</td>
+                        </tr>
+                        <tr>
+                          <td>Bisul</td>
+                        </tr>
+                        <tr>
+                          <td>Blefaritis</td>
+                        </tr>
+                        <tr>
+                          <td>Blighted Ovum</td>
+                        </tr>
+                        <tr>
+                          <td>Body Dysmorphic Disorder</td>
+                        </tr>
+                        <tr>
+                          <td>Botak</td>
+                        </tr>
+                        <tr>
+                          <td>Botulisme</td>
+                        </tr>
+                        <tr>
+                          <td>BPD (Borderline Personality Disorder)</td>
+                        </tr>
+                        <tr>
+                          <td>BPH (Benign Prostatic Hyperplasia)</td>
+                        </tr>
+                        <tr>
+                          <td>Bradikardia</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkiektasis</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkiolitis</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkitis</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkitis Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkitis Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Bronkopneumonia</td>
+                        </tr>
+                        <tr>
+                          <td>Brucellosis</td>
+                        </tr>
+                        <tr>
+                          <td>Bruxism</td>
+                        </tr>
+                        <tr>
+                          <td>Bulimia</td>
+                        </tr>
+                        <tr>
+                          <td>Bunion</td>
+                        </tr>
+                        <tr>
+                          <td>Burkitt Lymphoma</td>
+                        </tr>
+                        <tr>
+                          <td>Bursitis</td>
+                        </tr>
+                        <tr>
+                          <td>Buta</td>
+                        </tr>
+                        <tr>
+                          <td>Buta Warna</td>
+                        </tr>
+                        <tr>
+                          <td>Cacar Air</td>
+                        </tr>
+                        <tr>
+                          <td>Cacar Monyet</td>
+                        </tr>
+                        <tr>
+                          <td>Cacing Hati</td>
+                        </tr>
+                        <tr>
+                          <td>Cacing Kremi</td>
+                        </tr>
+                        <tr>
+                          <td>Calcinosis Cutis</td>
+                        </tr>
+                        <tr>
+                          <td>Campak</td>
+                        </tr>
+                        <tr>
+                          <td>Candidiasis</td>
+                        </tr>
+                        <tr>
+                          <td>Cantengan</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Hamstring</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Kepala</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Kepala Berat</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Kepala Ringan</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Ligamen Lutut Anterior</td>
+                        </tr>
+                        <tr>
+                          <td>Cedera Saraf Tulang Belakang</td>
+                        </tr>
+                        <tr>
+                          <td>Cegukan</td>
+                        </tr>
+                        <tr>
+                          <td>Cerebral Palsy</td>
+                        </tr>
+                        <tr>
+                          <td>Chancroid</td>
+                        </tr>
+                        <tr>
+                          <td>Chikungunya</td>
+                        </tr>
+                        <tr>
+                          <td>Chlamydia</td>
+                        </tr>
+                        <tr>
+                          <td>Cholangiocarcinoma</td>
+                        </tr>
+                        <tr>
+                          <td>Cholangitis</td>
+                        </tr>
+                        <tr>
+                          <td>Chronic Venous Insufficiency</td>
+                        </tr>
+                        <tr>
+                          <td>Clubfoot</td>
+                        </tr>
+                        <tr>
+                          <td>COVID-19</td>
+                        </tr>
+                        <tr>
+                          <td>Craniosynostosis</td>
+                        </tr>
+                        <tr>
+                          <td>Crohn's Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Croup</td>
+                        </tr>
+                        <tr>
+                          <td>Crush Injury</td>
+                        </tr>
+                        <tr>
+                          <td>CTS (Carpal Tunnel Syndrome)</td>
+                        </tr>
+                        <tr>
+                          <td>Cutaneous Larva Migrans</td>
+                        </tr>
+                        <tr>
+                          <td>Cystic Fibrosis</td>
+                        </tr>
+                        <tr>
+                          <td>Cystitis</td>
+                        </tr>
+                        <tr>
+                          <td>Cytomegalovirus</td>
+                        </tr>
+                        <tr>
+                          <td>De Quervain’s Tenosynovitis</td>
+                        </tr>
+                        <tr>
+                          <td>Deep Vein Thrombosis</td>
+                        </tr>
+                        <tr>
+                          <td>Defisiensi Alfa-1 Antitripsin</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Defisiensi Glucose-6-Phosphate Dehydrogenase (G6PD)
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Defisiensi Protein C</td>
+                        </tr>
+                        <tr>
+                          <td>Defisiensi Vitamin E</td>
+                        </tr>
+                        <tr>
+                          <td>Degenerasi Makula</td>
+                        </tr>
+                        <tr>
+                          <td>Dehidrasi</td>
+                        </tr>
+                        <tr>
+                          <td>Delirium</td>
+                        </tr>
+                        <tr>
+                          <td>Demam</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Berdarah</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Kelenjar (Glandular Fever)</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Kuning</td>
+                        </tr>
+                        <tr>
+                          <td>Demam pada Anak</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Rematik</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Scarlet</td>
+                        </tr>
+                        <tr>
+                          <td>Demam Tifoid</td>
+                        </tr>
+                        <tr>
+                          <td>Demensia</td>
+                        </tr>
+                        <tr>
+                          <td>Depresi</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatitis Atopik</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatitis Herpetiformis</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatitis Kontak</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatitis Numularis</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatitis Seboroik</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatofibrosarkoma Protuberans</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatographia</td>
+                        </tr>
+                        <tr>
+                          <td>Dermatomiositis</td>
+                        </tr>
+                        <tr>
+                          <td>Diabetes</td>
+                        </tr>
+                        <tr>
+                          <td>Diabetes Gestasional</td>
+                        </tr>
+                        <tr>
+                          <td>Diabetes Insipidus</td>
+                        </tr>
+                        <tr>
+                          <td>Diabetes Tipe 1</td>
+                        </tr>
+                        <tr>
+                          <td>Diabetes Tipe 2</td>
+                        </tr>
+                        <tr>
+                          <td>Diare</td>
+                        </tr>
+                        <tr>
+                          <td>Diare Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Difteri</td>
+                        </tr>
+                        <tr>
+                          <td>Disartria</td>
+                        </tr>
+                        <tr>
+                          <td>Diseksi Aorta</td>
+                        </tr>
+                        <tr>
+                          <td>Disentri</td>
+                        </tr>
+                        <tr>
+                          <td>Disfagia</td>
+                        </tr>
+                        <tr>
+                          <td>Disfungsi Seksual</td>
+                        </tr>
+                        <tr>
+                          <td>Disleksia</td>
+                        </tr>
+                        <tr>
+                          <td>Dislokasi</td>
+                        </tr>
+                        <tr>
+                          <td>Dislokasi Bahu</td>
+                        </tr>
+                        <tr>
+                          <td>Dismenore</td>
+                        </tr>
+                        <tr>
+                          <td>Dispareunia</td>
+                        </tr>
+                        <tr>
+                          <td>Distrofi Otot</td>
+                        </tr>
+                        <tr>
+                          <td>Divertikulitis</td>
+                        </tr>
+                        <tr>
+                          <td>Down Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Dry Socket</td>
+                        </tr>
+                        <tr>
+                          <td>Dwarfisme</td>
+                        </tr>
+                        <tr>
+                          <td>Dyspraxia</td>
+                        </tr>
+                        <tr>
+                          <td>Dystonia</td>
+                        </tr>
+                        <tr>
+                          <td>E-Book COVID-19</td>
+                        </tr>
+                        <tr>
+                          <td>E. coli</td>
+                        </tr>
+                        <tr>
+                          <td>Ebola</td>
+                        </tr>
+                        <tr>
+                          <td>Edema</td>
+                        </tr>
+                        <tr>
+                          <td>Edema Paru</td>
+                        </tr>
+                        <tr>
+                          <td>Efusi Perikardium</td>
+                        </tr>
+                        <tr>
+                          <td>Efusi Pleura</td>
+                        </tr>
+                        <tr>
+                          <td>Ejakulasi Dini</td>
+                        </tr>
+                        <tr>
+                          <td>Eklamsia</td>
+                        </tr>
+                        <tr>
+                          <td>Emboli</td>
+                        </tr>
+                        <tr>
+                          <td>Emboli Paru</td>
+                        </tr>
+                        <tr>
+                          <td>Emfisema</td>
+                        </tr>
+                        <tr>
+                          <td>Empiema</td>
+                        </tr>
+                        <tr>
+                          <td>Endoftalmitis</td>
+                        </tr>
+                        <tr>
+                          <td>Endokarditis</td>
+                        </tr>
+                        <tr>
+                          <td>Endometriosis</td>
+                        </tr>
+                        <tr>
+                          <td>Ensefalopati</td>
+                        </tr>
+                        <tr>
+                          <td>Entropion</td>
+                        </tr>
+                        <tr>
+                          <td>Enuresis</td>
+                        </tr>
+                        <tr>
+                          <td>Epidermolisis Bulosa</td>
+                        </tr>
+                        <tr>
+                          <td>Epididimitis</td>
+                        </tr>
+                        <tr>
+                          <td>Epidural Hematoma</td>
+                        </tr>
+                        <tr>
+                          <td>Epiglotitis</td>
+                        </tr>
+                        <tr>
+                          <td>Epilepsi</td>
+                        </tr>
+                        <tr>
+                          <td>Episkleritis</td>
+                        </tr>
+                        <tr>
+                          <td>Eritema Multiformis</td>
+                        </tr>
+                        <tr>
+                          <td>Esofagitis</td>
+                        </tr>
+                        <tr>
+                          <td>Ewing's Sarcoma</td>
+                        </tr>
+                        <tr>
+                          <td>Faringitis</td>
+                        </tr>
+                        <tr>
+                          <td>Fenilketonuria</td>
+                        </tr>
+                        <tr>
+                          <td>Fetal Alcohol Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Fetal Distress (Gawat Janin)</td>
+                        </tr>
+                        <tr>
+                          <td>Fibroadenoma</td>
+                        </tr>
+                        <tr>
+                          <td>Fibromyalgia</td>
+                        </tr>
+                        <tr>
+                          <td>Fibrosis Paru</td>
+                        </tr>
+                        <tr>
+                          <td>Fimosis</td>
+                        </tr>
+                        <tr>
+                          <td>Fistula Ani</td>
+                        </tr>
+                        <tr>
+                          <td>Fisura Ani</td>
+                        </tr>
+                        <tr>
+                          <td>Flek Hitam</td>
+                        </tr>
+                        <tr>
+                          <td>Floaters</td>
+                        </tr>
+                        <tr>
+                          <td>Flu</td>
+                        </tr>
+                        <tr>
+                          <td>Flu Babi</td>
+                        </tr>
+                        <tr>
+                          <td>Flu Burung</td>
+                        </tr>
+                        <tr>
+                          <td>Flu Singapura</td>
+                        </tr>
+                        <tr>
+                          <td>Fobia</td>
+                        </tr>
+                        <tr>
+                          <td>Fobia Sosial</td>
+                        </tr>
+                        <tr>
+                          <td>Folikulitis</td>
+                        </tr>
+                        <tr>
+                          <td>Frozen Shoulder</td>
+                        </tr>
+                        <tr>
+                          <td>Gagal Ginjal Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Gagal Ginjal Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Gagal Hati</td>
+                        </tr>
+                        <tr>
+                          <td>Gagal Jantung</td>
+                        </tr>
+                        <tr>
+                          <td>Gagap</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Bipolar</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Elektrolit</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Kecemasan Umum</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Kepribadian</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Keseimbangan Asam Basa</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Makan</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Mental</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Metabolik</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Panik</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Pencernaan</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Pendengaran</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Penyimpanan Lisosom</td>
+                        </tr>
+                        <tr>
+                          <td>Gangguan Tidur</td>
+                        </tr>
+                        <tr>
+                          <td>Gangrene</td>
+                        </tr>
+                        <tr>
+                          <td>Gastritis</td>
+                        </tr>
+                        <tr>
+                          <td>Gastroenteritis</td>
+                        </tr>
+                        <tr>
+                          <td>Gastroparesis</td>
+                        </tr>
+                        <tr>
+                          <td>Gastroschisis</td>
+                        </tr>
+                        <tr>
+                          <td>Gendang Telinga Pecah</td>
+                        </tr>
+                        <tr>
+                          <td>Giardiasis</td>
+                        </tr>
+                        <tr>
+                          <td>Gigantisme</td>
+                        </tr>
+                        <tr>
+                          <td>Gigi Berlubang</td>
+                        </tr>
+                        <tr>
+                          <td>Gigi Bungsu</td>
+                        </tr>
+                        <tr>
+                          <td>Gigi Sensitif</td>
+                        </tr>
+                        <tr>
+                          <td>Gigitan Serangga</td>
+                        </tr>
+                        <tr>
+                          <td>Ginekomastia</td>
+                        </tr>
+                        <tr>
+                          <td>Glaukoma</td>
+                        </tr>
+                        <tr>
+                          <td>Glomerulonefritis</td>
+                        </tr>
+                        <tr>
+                          <td>Gondongan</td>
+                        </tr>
+                        <tr>
+                          <td>Gonore</td>
+                        </tr>
+                        <tr>
+                          <td>Graft versus Host Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Granuloma Inguinale</td>
+                        </tr>
+                        <tr>
+                          <td>Gusi Bengkak</td>
+                        </tr>
+                        <tr>
+                          <td>Gusi Berdarah</td>
+                        </tr>
+                        <tr>
+                          <td>Halusinasi</td>
+                        </tr>
+                        <tr>
+                          <td>Hamil Anggur</td>
+                        </tr>
+                        <tr>
+                          <td>Hammer Toe</td>
+                        </tr>
+                        <tr>
+                          <td>Hantavirus</td>
+                        </tr>
+                        <tr>
+                          <td>Harlequin Ichthyosis</td>
+                        </tr>
+                        <tr>
+                          <td>Hemangioma</td>
+                        </tr>
+                        <tr>
+                          <td>Hematochezia</td>
+                        </tr>
+                        <tr>
+                          <td>Hematoma</td>
+                        </tr>
+                        <tr>
+                          <td>Hematuria</td>
+                        </tr>
+                        <tr>
+                          <td>Hemofilia</td>
+                        </tr>
+                        <tr>
+                          <td>Hemokromatosis</td>
+                        </tr>
+                        <tr>
+                          <td>Henoch-Schonlein Purpura</td>
+                        </tr>
+                        <tr>
+                          <td>Henti Jantung Mendadak</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis A</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis B</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis C</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis D</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatitis E</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatoblastoma</td>
+                        </tr>
+                        <tr>
+                          <td>Hepatomegali</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Diafragma</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Epigastrik</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Femoralis</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Inguinalis</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Nukleus Pulposus</td>
+                        </tr>
+                        <tr>
+                          <td>Hernia Umbilikalis</td>
+                        </tr>
+                        <tr>
+                          <td>Herniasi Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Herpangina</td>
+                        </tr>
+                        <tr>
+                          <td>Herpes</td>
+                        </tr>
+                        <tr>
+                          <td>Herpes Genital (Herpes Simplex)</td>
+                        </tr>
+                        <tr>
+                          <td>Herpes Zoster</td>
+                        </tr>
+                        <tr>
+                          <td>Hiatus Hernia</td>
+                        </tr>
+                        <tr>
+                          <td>Hidradenitis Suppurativa</td>
+                        </tr>
+                        <tr>
+                          <td>Hidrokel</td>
+                        </tr>
+                        <tr>
+                          <td>Hidronefrosis</td>
+                        </tr>
+                        <tr>
+                          <td>Hidrosefalus</td>
+                        </tr>
+                        <tr>
+                          <td>Hidung Tersumbat</td>
+                        </tr>
+                        <tr>
+                          <td>Hifema</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperemesis Gravidarum</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperglikemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperhidrosis</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperkalemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperkalsemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperkolesterolemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipermagnesemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipermetropi</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperparatiroidisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperpigmentasi</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperpituitarisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperplasia Adrenal Kongenital</td>
+                        </tr>
+                        <tr>
+                          <td>Hiperprolaktinemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertensi</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertensi Pulmonal</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertensi Sekunder</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertermia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertiroidisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hipertrofi Ventrikel Kiri</td>
+                        </tr>
+                        <tr>
+                          <td>Hipoalbuminemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipoglikemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipogonadisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hipokalemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipoksia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipomagnesemia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipomania</td>
+                        </tr>
+                        <tr>
+                          <td>Hiponatremia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipoparatiroid</td>
+                        </tr>
+                        <tr>
+                          <td>Hipopituitarisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hipospadia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipotensi</td>
+                        </tr>
+                        <tr>
+                          <td>Hipotensi Ortostatik</td>
+                        </tr>
+                        <tr>
+                          <td>Hipotermia</td>
+                        </tr>
+                        <tr>
+                          <td>Hipotiroidisme</td>
+                        </tr>
+                        <tr>
+                          <td>Hirsutisme</td>
+                        </tr>
+                        <tr>
+                          <td>Histoplasmosis</td>
+                        </tr>
+                        <tr>
+                          <td>HIV dan AIDS</td>
+                        </tr>
+                        <tr>
+                          <td>Hoarding Disorder</td>
+                        </tr>
+                        <tr>
+                          <td>Hot Flashes</td>
+                        </tr>
+                        <tr>
+                          <td>HPV</td>
+                        </tr>
+                        <tr>
+                          <td>Iktiosis</td>
+                        </tr>
+                        <tr>
+                          <td>Ileus Paralitik</td>
+                        </tr>
+                        <tr>
+                          <td>Impetigo</td>
+                        </tr>
+                        <tr>
+                          <td>Impotensi</td>
+                        </tr>
+                        <tr>
+                          <td>Imunisasi</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Aliran Darah</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Bakteri</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Bakteri Penghasil ESBL</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Cacing Tambang</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Ginjal</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Helicobacter Pylori</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Jamur</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Kandung Kemih</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Kulit</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Luka Operasi</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Nosokomial</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Parasit</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Salmonella</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Saluran Kemih</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Saluran Pernapasan</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Shigella</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Streptococcus</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Usus</td>
+                        </tr>
+                        <tr>
+                          <td>Infeksi Virus</td>
+                        </tr>
+                        <tr>
+                          <td>Inkompatibilitas ABO</td>
+                        </tr>
+                        <tr>
+                          <td>Inkompatibilitas Rhesus</td>
+                        </tr>
+                        <tr>
+                          <td>Inkompetensi Serviks</td>
+                        </tr>
+                        <tr>
+                          <td>Inkontinensia Tinja</td>
+                        </tr>
+                        <tr>
+                          <td>Inkontinensia Urine</td>
+                        </tr>
+                        <tr>
+                          <td>Insecure</td>
+                        </tr>
+                        <tr>
+                          <td>Insomnia</td>
+                        </tr>
+                        <tr>
+                          <td>Insulinoma</td>
+                        </tr>
+                        <tr>
+                          <td>Interstitial Lung Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Intoleransi Laktosa</td>
+                        </tr>
+                        <tr>
+                          <td>Intrauterine growth restriction (IUGR)</td>
+                        </tr>
+                        <tr>
+                          <td>Intususepsi</td>
+                        </tr>
+                        <tr>
+                          <td>Iskemia</td>
+                        </tr>
+                        <tr>
+                          <td>ISPA</td>
+                        </tr>
+                        <tr>
+                          <td>ITP (Idiopathic Thrombocytopenic Purpura)</td>
+                        </tr>
+                        <tr>
+                          <td>Jamur Kuku</td>
+                        </tr>
+                        <tr>
+                          <td>Jamur Kulit</td>
+                        </tr>
+                        <tr>
+                          <td>Jantung Berdebar</td>
+                        </tr>
+                        <tr>
+                          <td>Jerawat</td>
+                        </tr>
+                        <tr>
+                          <td>Jet Lag</td>
+                        </tr>
+                        <tr>
+                          <td>Kaki Gajah</td>
+                        </tr>
+                        <tr>
+                          <td>Kaki Rata</td>
+                        </tr>
+                        <tr>
+                          <td>Kalazion</td>
+                        </tr>
+                        <tr>
+                          <td>Kandung Kemih Turun</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Anus</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Darah</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Endometrium</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Esofagus</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Ginjal</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Hati</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Kandung Kemih</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Kelenjar Air Liur</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Kolorektal</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Kulit</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Kulit Melanoma</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Lambung</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Laring</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Lidah</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Mata</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Mata Melanoma</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Mulut</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Nasofaring</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Ovarium</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Pankreas</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Paru-Paru</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Payudara</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Prostat</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Rahim</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Serviks</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Tenggorokan</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Testis</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Tiroid</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Tulang</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Usus Besar</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Vagina</td>
+                        </tr>
+                        <tr>
+                          <td>Kanker Vulva</td>
+                        </tr>
+                        <tr>
+                          <td>Kantuk</td>
+                        </tr>
+                        <tr>
+                          <td>Kapalan</td>
+                        </tr>
+                        <tr>
+                          <td>Karang Gigi</td>
+                        </tr>
+                        <tr>
+                          <td>Kardiomegali</td>
+                        </tr>
+                        <tr>
+                          <td>Kardiomiopati</td>
+                        </tr>
+                        <tr>
+                          <td>Karsinoma Sel Basal</td>
+                        </tr>
+                        <tr>
+                          <td>Karsinoma Sel Skuamosa</td>
+                        </tr>
+                        <tr>
+                          <td>Katarak Pada Lansia</td>
+                        </tr>
+                        <tr>
+                          <td>Kecanduan Alkohol</td>
+                        </tr>
+                        <tr>
+                          <td>Kecanduan Nikotin</td>
+                        </tr>
+                        <tr>
+                          <td>Keguguran</td>
+                        </tr>
+                        <tr>
+                          <td>Kehamilan Ektopik</td>
+                        </tr>
+                        <tr>
+                          <td>Kejang</td>
+                        </tr>
+                        <tr>
+                          <td>Kejang Demam</td>
+                        </tr>
+                        <tr>
+                          <td>Kekurangan Yodium</td>
+                        </tr>
+                        <tr>
+                          <td>Kelahiran Prematur</td>
+                        </tr>
+                        <tr>
+                          <td>Kelainan Darah</td>
+                        </tr>
+                        <tr>
+                          <td>Kelainan Kongenital</td>
+                        </tr>
+                        <tr>
+                          <td>Kelumpuhan</td>
+                        </tr>
+                        <tr>
+                          <td>Kembar Siam</td>
+                        </tr>
+                        <tr>
+                          <td>Kepribadian Ganda</td>
+                        </tr>
+                        <tr>
+                          <td>Keputihan</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Arsenik</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Insektisida</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Karbon Monoksida</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Makanan</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Merkuri</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Sianida</td>
+                        </tr>
+                        <tr>
+                          <td>Keracunan Timbal/Plumbism</td>
+                        </tr>
+                        <tr>
+                          <td>Keratitis</td>
+                        </tr>
+                        <tr>
+                          <td>Keratosis Pilaris</td>
+                        </tr>
+                        <tr>
+                          <td>Keratosis Seboroik</td>
+                        </tr>
+                        <tr>
+                          <td>Keringat Dingin</td>
+                        </tr>
+                        <tr>
+                          <td>Keriput</td>
+                        </tr>
+                        <tr>
+                          <td>Kernikterus</td>
+                        </tr>
+                        <tr>
+                          <td>Keseleo</td>
+                        </tr>
+                        <tr>
+                          <td>Kesemutan</td>
+                        </tr>
+                        <tr>
+                          <td>Ketoasidosis Alkoholik</td>
+                        </tr>
+                        <tr>
+                          <td>Ketoasidosis Diabetik</td>
+                        </tr>
+                        <tr>
+                          <td>Ketombe</td>
+                        </tr>
+                        <tr>
+                          <td>Ketuban Pecah Dini</td>
+                        </tr>
+                        <tr>
+                          <td>Kifosis</td>
+                        </tr>
+                        <tr>
+                          <td>Kista</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Baker</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Bartholin</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Dermoid</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Epidermoid</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Epididimis</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Ganglion</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Ginjal</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Ovarium</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Payudara</td>
+                        </tr>
+                        <tr>
+                          <td>Kista Pilonidal</td>
+                        </tr>
+                        <tr>
+                          <td>Klaudikasio Intermiten</td>
+                        </tr>
+                        <tr>
+                          <td>Kleptomania</td>
+                        </tr>
+                        <tr>
+                          <td>Koarktasio Aorta</td>
+                        </tr>
+                        <tr>
+                          <td>Kolera</td>
+                        </tr>
+                        <tr>
+                          <td>Kolesistitis</td>
+                        </tr>
+                        <tr>
+                          <td>Kolesterol</td>
+                        </tr>
+                        <tr>
+                          <td>Kolesterol Tinggi</td>
+                        </tr>
+                        <tr>
+                          <td>Kolitis Ulseratif</td>
+                        </tr>
+                        <tr>
+                          <td>Koma</td>
+                        </tr>
+                        <tr>
+                          <td>Koma Miksedema</td>
+                        </tr>
+                        <tr>
+                          <td>Komedo</td>
+                        </tr>
+                        <tr>
+                          <td>Komedo Putih</td>
+                        </tr>
+                        <tr>
+                          <td>Konjungtivitis</td>
+                        </tr>
+                        <tr>
+                          <td>Konstipasi</td>
+                        </tr>
+                        <tr>
+                          <td>Kostokondritis</td>
+                        </tr>
+                        <tr>
+                          <td>Kriptorkismus</td>
+                        </tr>
+                        <tr>
+                          <td>Kriptosporidiosis</td>
+                        </tr>
+                        <tr>
+                          <td>Krisis Tiroid</td>
+                        </tr>
+                        <tr>
+                          <td>Kudis</td>
+                        </tr>
+                        <tr>
+                          <td>Kurap</td>
+                        </tr>
+                        <tr>
+                          <td>Kusta</td>
+                        </tr>
+                        <tr>
+                          <td>Kutil</td>
+                        </tr>
+                        <tr>
+                          <td>Kutil Kelamin</td>
+                        </tr>
+                        <tr>
+                          <td>Kutu Air</td>
+                        </tr>
+                        <tr>
+                          <td>Kutu Kasur</td>
+                        </tr>
+                        <tr>
+                          <td>Kutu Kemaluan</td>
+                        </tr>
+                        <tr>
+                          <td>Kutu Rambut</td>
+                        </tr>
+                        <tr>
+                          <td>Laringitis</td>
+                        </tr>
+                        <tr>
+                          <td>Lentigo</td>
+                        </tr>
+                        <tr>
+                          <td>Leptospirosis</td>
+                        </tr>
+                        <tr>
+                          <td>Leukemia</td>
+                        </tr>
+                        <tr>
+                          <td>Leukemia Limfoblastik Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Leukemia Limfositik Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Leukemia Mieloblastik Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Leukoplakia</td>
+                        </tr>
+                        <tr>
+                          <td>Leukositosis</td>
+                        </tr>
+                        <tr>
+                          <td>Lichen Planus</td>
+                        </tr>
+                        <tr>
+                          <td>Lichen Sclerosus</td>
+                        </tr>
+                        <tr>
+                          <td>Limfadenitis</td>
+                        </tr>
+                        <tr>
+                          <td>Limfadenopati</td>
+                        </tr>
+                        <tr>
+                          <td>Limfoma</td>
+                        </tr>
+                        <tr>
+                          <td>Limfoma Hodgkin</td>
+                        </tr>
+                        <tr>
+                          <td>Limfoma Mata</td>
+                        </tr>
+                        <tr>
+                          <td>Limfoma non-Hodgkin</td>
+                        </tr>
+                        <tr>
+                          <td>Limfoma Sel Mantel</td>
+                        </tr>
+                        <tr>
+                          <td>Lipoma</td>
+                        </tr>
+                        <tr>
+                          <td>Liposarcoma</td>
+                        </tr>
+                        <tr>
+                          <td>Listeria</td>
+                        </tr>
+                        <tr>
+                          <td>Luka Bakar</td>
+                        </tr>
+                        <tr>
+                          <td>Lupus</td>
+                        </tr>
+                        <tr>
+                          <td>Lupus Nefritis</td>
+                        </tr>
+                        <tr>
+                          <td>Lymphedema</td>
+                        </tr>
+                        <tr>
+                          <td>Lymphogranuloma venereum (LGV)</td>
+                        </tr>
+                        <tr>
+                          <td>Mabuk Perjalanan</td>
+                        </tr>
+                        <tr>
+                          <td>Malabsorbsi Makanan</td>
+                        </tr>
+                        <tr>
+                          <td>Malaria</td>
+                        </tr>
+                        <tr>
+                          <td>Malformasi Arteri Vena</td>
+                        </tr>
+                        <tr>
+                          <td>Malformasi Chiari</td>
+                        </tr>
+                        <tr>
+                          <td>Malnutrisi Energi Protein</td>
+                        </tr>
+                        <tr>
+                          <td>Mandul</td>
+                        </tr>
+                        <tr>
+                          <td>Mastitis</td>
+                        </tr>
+                        <tr>
+                          <td>Mastocytosis</td>
+                        </tr>
+                        <tr>
+                          <td>Mastoiditis</td>
+                        </tr>
+                        <tr>
+                          <td>Mata Ikan</td>
+                        </tr>
+                        <tr>
+                          <td>Mata Juling</td>
+                        </tr>
+                        <tr>
+                          <td>Mata Kering</td>
+                        </tr>
+                        <tr>
+                          <td>Mata Malas</td>
+                        </tr>
+                        <tr>
+                          <td>Mati Rasa</td>
+                        </tr>
+                        <tr>
+                          <td>Megakolon</td>
+                        </tr>
+                        <tr>
+                          <td>Melasma</td>
+                        </tr>
+                        <tr>
+                          <td>Melena</td>
+                        </tr>
+                        <tr>
+                          <td>Mendengkur</td>
+                        </tr>
+                        <tr>
+                          <td>Menggigil</td>
+                        </tr>
+                        <tr>
+                          <td>Meningioma</td>
+                        </tr>
+                        <tr>
+                          <td>Meningitis</td>
+                        </tr>
+                        <tr>
+                          <td>Menopause</td>
+                        </tr>
+                        <tr>
+                          <td>Menorrhagia</td>
+                        </tr>
+                        <tr>
+                          <td>Menstruasi</td>
+                        </tr>
+                        <tr>
+                          <td>Mesothelioma</td>
+                        </tr>
+                        <tr>
+                          <td>Methemoglobinemia</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Middle East Respiratory Syndrome Coronavirus (MERS
+                            CoV)
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Mielitis Transversa</td>
+                        </tr>
+                        <tr>
+                          <td>Migrain</td>
+                        </tr>
+                        <tr>
+                          <td>Mikosis</td>
+                        </tr>
+                        <tr>
+                          <td>Mikrosefalus</td>
+                        </tr>
+                        <tr>
+                          <td>Milia</td>
+                        </tr>
+                        <tr>
+                          <td>Mimisan</td>
+                        </tr>
+                        <tr>
+                          <td>Mimpi Buruk</td>
+                        </tr>
+                        <tr>
+                          <td>Miokarditis</td>
+                        </tr>
+                        <tr>
+                          <td>Miom</td>
+                        </tr>
+                        <tr>
+                          <td>Miopi (Rabun Jauh)</td>
+                        </tr>
+                        <tr>
+                          <td>Mirror Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Moebius Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Molluscum Contagiosum</td>
+                        </tr>
+                        <tr>
+                          <td>Mononukleosis</td>
+                        </tr>
+                        <tr>
+                          <td>Morning Sickness</td>
+                        </tr>
+                        <tr>
+                          <td>MRSA</td>
+                        </tr>
+                        <tr>
+                          <td>Mual</td>
+                        </tr>
+                        <tr>
+                          <td>Multiple Myeloma</td>
+                        </tr>
+                        <tr>
+                          <td>Multiple Sclerosis</td>
+                        </tr>
+                        <tr>
+                          <td>Mulut Kering</td>
+                        </tr>
+                        <tr>
+                          <td>Muntaber</td>
+                        </tr>
+                        <tr>
+                          <td>Muntah</td>
+                        </tr>
+                        <tr>
+                          <td>Muntah Darah</td>
+                        </tr>
+                        <tr>
+                          <td>Myasthenia Gravis</td>
+                        </tr>
+                        <tr>
+                          <td>Myelofibrosis</td>
+                        </tr>
+                        <tr>
+                          <td>Narkolepsi</td>
+                        </tr>
+                        <tr>
+                          <td>Narsistik</td>
+                        </tr>
+                        <tr>
+                          <td>Necrotizing Enterocolitis</td>
+                        </tr>
+                        <tr>
+                          <td>Nefropati Diabetik</td>
+                        </tr>
+                        <tr>
+                          <td>Nekrolisis Epidermal Toksik</td>
+                        </tr>
+                        <tr>
+                          <td>Neuritis Optik</td>
+                        </tr>
+                        <tr>
+                          <td>Neuroblastoma</td>
+                        </tr>
+                        <tr>
+                          <td>Neurodermatitis</td>
+                        </tr>
+                        <tr>
+                          <td>Neurofibromatosis Tipe 1</td>
+                        </tr>
+                        <tr>
+                          <td>Neurofibromatosis Tipe 2</td>
+                        </tr>
+                        <tr>
+                          <td>Neuroma Akustik</td>
+                        </tr>
+                        <tr>
+                          <td>Neuropati</td>
+                        </tr>
+                        <tr>
+                          <td>Neuropati Diabetik</td>
+                        </tr>
+                        <tr>
+                          <td>Neuropati Perifer</td>
+                        </tr>
+                        <tr>
+                          <td>Nevoid Basal Cell Carcinoma Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Nistagmus</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Anus</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Dada</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Leher</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Lutut</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Otot (Myalgia)</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Panggul</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Payudara (Mastalgia)</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Pergelangan Tangan</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Punggung</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Sendi</td>
+                        </tr>
+                        <tr>
+                          <td>Nyeri Tumit</td>
+                        </tr>
+                        <tr>
+                          <td>Obesitas</td>
+                        </tr>
+                        <tr>
+                          <td>Obesitas Morbid</td>
+                        </tr>
+                        <tr>
+                          <td>Obstruksi Usus</td>
+                        </tr>
+                        <tr>
+                          <td>OCD</td>
+                        </tr>
+                        <tr>
+                          <td>ODD (Oppositional Defiant Disorder)</td>
+                        </tr>
+                        <tr>
+                          <td>Omphalocele</td>
+                        </tr>
+                        <tr>
+                          <td>Orchitis</td>
+                        </tr>
+                        <tr>
+                          <td>Osteoarthritis</td>
+                        </tr>
+                        <tr>
+                          <td>Osteofit</td>
+                        </tr>
+                        <tr>
+                          <td>Osteomalacia</td>
+                        </tr>
+                        <tr>
+                          <td>Osteomielitis</td>
+                        </tr>
+                        <tr>
+                          <td>Osteopetrosis</td>
+                        </tr>
+                        <tr>
+                          <td>Osteoporosis</td>
+                        </tr>
+                        <tr>
+                          <td>Osteosarcoma</td>
+                        </tr>
+                        <tr>
+                          <td>Otitis Eksterna</td>
+                        </tr>
+                        <tr>
+                          <td>Otitis Media</td>
+                        </tr>
+                        <tr>
+                          <td>Otomikosis</td>
+                        </tr>
+                        <tr>
+                          <td>Otosklerosis</td>
+                        </tr>
+                        <tr>
+                          <td>Paget's Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Pankreatitis Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Pankreatitis Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Panu</td>
+                        </tr>
+                        <tr>
+                          <td>Parafimosis</td>
+                        </tr>
+                        <tr>
+                          <td>Paranoid</td>
+                        </tr>
+                        <tr>
+                          <td>Paraplegia</td>
+                        </tr>
+                        <tr>
+                          <td>Paratifus</td>
+                        </tr>
+                        <tr>
+                          <td>Paronikia</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Kaki dan Tungkai</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Pergelangan Kaki</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Pergelangan Tangan</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Tulang</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Tulang Pinggul</td>
+                        </tr>
+                        <tr>
+                          <td>Patah Tulang Selangka</td>
+                        </tr>
+                        <tr>
+                          <td>Patellofemoral Pain Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Patent Ductus Arteriosus</td>
+                        </tr>
+                        <tr>
+                          <td>Patent Foramen Ovale</td>
+                        </tr>
+                        <tr>
+                          <td>Pectus Excavatum</td>
+                        </tr>
+                        <tr>
+                          <td>Pembengkakan Kelenjar Getah Bening</td>
+                        </tr>
+                        <tr>
+                          <td>Pembengkakan Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Pembesaran Adenoid</td>
+                        </tr>
+                        <tr>
+                          <td>Pemfigoid Bulosa</td>
+                        </tr>
+                        <tr>
+                          <td>Pemfigus</td>
+                        </tr>
+                        <tr>
+                          <td>Penurunan Kesadaran</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Addison</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Alzheimer</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Arteri Perifer</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Asam Lambung</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Asam Urat</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Autoimun</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Behcet</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Beri-Beri</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Buerger</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Celiac</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Chagas</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Charcot-Marie-Tooth</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Dekompresi</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Ginjal</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Gondok</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Graves</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Hashimoto</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Hati Terkait Alkohol</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Hirschsprung</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Huntington</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Infeksi</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Jamur Hitam</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Jantung</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Jantung Bawaan</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Jantung Koroner</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Jantung Rematik</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Katup Jantung</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Kawasaki</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Kennedy</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Kuning</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Liver</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Lyme</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Meniere</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Menular Seksual</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Mieloproliferatif</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Parkinson</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Paru Obstruktif Kronis</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Pes</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Peyronie</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Retina</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Sapi Gila</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Saraf Motorik</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Tangan Kaki dan Mulut</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Tidur Berjalan</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Tiroid</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Usus Buntu</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Von Willebrand</td>
+                        </tr>
+                        <tr>
+                          <td>Penyakit Zoonosis</td>
+                        </tr>
+                        <tr>
+                          <td>Penyalahgunaan NAPZA</td>
+                        </tr>
+                        <tr>
+                          <td>Percobaan Bunuh Diri</td>
+                        </tr>
+                        <tr>
+                          <td>Perdarahan Pascamelahirkan</td>
+                        </tr>
+                        <tr>
+                          <td>Perdarahan Saluran Pencernaan</td>
+                        </tr>
+                        <tr>
+                          <td>Perdarahan Subarachnoid</td>
+                        </tr>
+                        <tr>
+                          <td>Perdarahan Subkonjungtiva</td>
+                        </tr>
+                        <tr>
+                          <td>Pergelangan Kaki Keseleo</td>
+                        </tr>
+                        <tr>
+                          <td>Perikarditis</td>
+                        </tr>
+                        <tr>
+                          <td>Perikoronitis</td>
+                        </tr>
+                        <tr>
+                          <td>Perimenopause</td>
+                        </tr>
+                        <tr>
+                          <td>Periodontitis</td>
+                        </tr>
+                        <tr>
+                          <td>Peritonitis</td>
+                        </tr>
+                        <tr>
+                          <td>Perlemakan Hati</td>
+                        </tr>
+                        <tr>
+                          <td>Perut Kembung</td>
+                        </tr>
+                        <tr>
+                          <td>Pheochromocytoma</td>
+                        </tr>
+                        <tr>
+                          <td>Phlegmon</td>
+                        </tr>
+                        <tr>
+                          <td>Phthisis Bulbi</td>
+                        </tr>
+                        <tr>
+                          <td>Pilek</td>
+                        </tr>
+                        <tr>
+                          <td>Pingsan</td>
+                        </tr>
+                        <tr>
+                          <td>Pinguecula</td>
+                        </tr>
+                        <tr>
+                          <td>Pityriasis Rosea</td>
+                        </tr>
+                        <tr>
+                          <td>Plantar Fasciitis</td>
+                        </tr>
+                        <tr>
+                          <td>Plasenta Akreta</td>
+                        </tr>
+                        <tr>
+                          <td>Plasenta Previa</td>
+                        </tr>
+                        <tr>
+                          <td>Pleuritis</td>
+                        </tr>
+                        <tr>
+                          <td>Plummer's Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Pneumonia</td>
+                        </tr>
+                        <tr>
+                          <td>Pneumonia Aspirasi</td>
+                        </tr>
+                        <tr>
+                          <td>Pneumothorax</td>
+                        </tr>
+                        <tr>
+                          <td>Polihidramnion</td>
+                        </tr>
+                        <tr>
+                          <td>Polimiositis</td>
+                        </tr>
+                        <tr>
+                          <td>Polio</td>
+                        </tr>
+                        <tr>
+                          <td>Polip Hidung</td>
+                        </tr>
+                        <tr>
+                          <td>Polip Pulpa</td>
+                        </tr>
+                        <tr>
+                          <td>Polip Rahim</td>
+                        </tr>
+                        <tr>
+                          <td>Polip Usus</td>
+                        </tr>
+                        <tr>
+                          <td>Polisitemia Vera</td>
+                        </tr>
+                        <tr>
+                          <td>Polycystic Kidney Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Polycystic Ovarian Syndrome (PCOS)</td>
+                        </tr>
+                        <tr>
+                          <td>Pompholyx</td>
+                        </tr>
+                        <tr>
+                          <td>Porfiria</td>
+                        </tr>
+                        <tr>
+                          <td>Postpartum Depression</td>
+                        </tr>
+                        <tr>
+                          <td>Prader-Willi Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Prediabetes</td>
+                        </tr>
+                        <tr>
+                          <td>Preeklamsia</td>
+                        </tr>
+                        <tr>
+                          <td>Premenstrual Dysphoric Disorder</td>
+                        </tr>
+                        <tr>
+                          <td>Premenstrual Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Presbikusis</td>
+                        </tr>
+                        <tr>
+                          <td>Presbiopi</td>
+                        </tr>
+                        <tr>
+                          <td>Priapismus</td>
+                        </tr>
+                        <tr>
+                          <td>Primary Biliary Cirrhosis</td>
+                        </tr>
+                        <tr>
+                          <td>Primary Sclerosing Cholangitis</td>
+                        </tr>
+                        <tr>
+                          <td>Proctalgia Fugax</td>
+                        </tr>
+                        <tr>
+                          <td>Progeria</td>
+                        </tr>
+                        <tr>
+                          <td>Proktitis</td>
+                        </tr>
+                        <tr>
+                          <td>Prolaktinoma</td>
+                        </tr>
+                        <tr>
+                          <td>Prostatitis</td>
+                        </tr>
+                        <tr>
+                          <td>Pruritus</td>
+                        </tr>
+                        <tr>
+                          <td>Pseudobulbar Affect (PBA)</td>
+                        </tr>
+                        <tr>
+                          <td>Pseudogout</td>
+                        </tr>
+                        <tr>
+                          <td>Psikopat</td>
+                        </tr>
+                        <tr>
+                          <td>Psikosis</td>
+                        </tr>
+                        <tr>
+                          <td>Psoriasis</td>
+                        </tr>
+                        <tr>
+                          <td>Psoriasis Arthritis</td>
+                        </tr>
+                        <tr>
+                          <td>Pterygium</td>
+                        </tr>
+                        <tr>
+                          <td>PTSD</td>
+                        </tr>
+                        <tr>
+                          <td>Pubertas Dini</td>
+                        </tr>
+                        <tr>
+                          <td>Pusing</td>
+                        </tr>
+                        <tr>
+                          <td>Rabies</td>
+                        </tr>
+                        <tr>
+                          <td>Rabun Senja</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Amandel</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Gusi</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Panggul</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Sendi</td>
+                        </tr>
+                        <tr>
+                          <td>Radang Usus (IBD)</td>
+                        </tr>
+                        <tr>
+                          <td>Rakitis</td>
+                        </tr>
+                        <tr>
+                          <td>Rambut Rontok</td>
+                        </tr>
+                        <tr>
+                          <td>Rambut Tumbuh ke Dalam</td>
+                        </tr>
+                        <tr>
+                          <td>Ramsay Hunt Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Reactive Arthritis</td>
+                        </tr>
+                        <tr>
+                          <td>Refeeding Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Rematik</td>
+                        </tr>
+                        <tr>
+                          <td>Retardasi Mental</td>
+                        </tr>
+                        <tr>
+                          <td>Retensi Plasenta</td>
+                        </tr>
+                        <tr>
+                          <td>Retinoblastoma</td>
+                        </tr>
+                        <tr>
+                          <td>Retinopati Diabetik</td>
+                        </tr>
+                        <tr>
+                          <td>Rhabdomyolysis</td>
+                        </tr>
+                        <tr>
+                          <td>Rhabdomyosarcoma</td>
+                        </tr>
+                        <tr>
+                          <td>Rheumatoid Arthritis</td>
+                        </tr>
+                        <tr>
+                          <td>Rhinitis</td>
+                        </tr>
+                        <tr>
+                          <td>Rhinitis Alergi</td>
+                        </tr>
+                        <tr>
+                          <td>Rosacea</td>
+                        </tr>
+                        <tr>
+                          <td>Roseola</td>
+                        </tr>
+                        <tr>
+                          <td>Rotavirus</td>
+                        </tr>
+                        <tr>
+                          <td>Ruam Kulit</td>
+                        </tr>
+                        <tr>
+                          <td>Ruam Popok</td>
+                        </tr>
+                        <tr>
+                          <td>Rubella</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Gigi</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Kepala</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Kepala Cluster</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Kepala Tegang</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Maag</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Perut</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Pinggang</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Saraf</td>
+                        </tr>
+                        <tr>
+                          <td>Sakit Tenggorokan</td>
+                        </tr>
+                        <tr>
+                          <td>Sariawan</td>
+                        </tr>
+                        <tr>
+                          <td>Sarkoidosis</td>
+                        </tr>
+                        <tr>
+                          <td>Sarkoma Jaringan Lunak</td>
+                        </tr>
+                        <tr>
+                          <td>SARS</td>
+                        </tr>
+                        <tr>
+                          <td>Selulitis</td>
+                        </tr>
+                        <tr>
+                          <td>Selulitis Orbita</td>
+                        </tr>
+                        <tr>
+                          <td>Sengatan Lebah</td>
+                        </tr>
+                        <tr>
+                          <td>Sepsis</td>
+                        </tr>
+                        <tr>
+                          <td>Septic Arthritis</td>
+                        </tr>
+                        <tr>
+                          <td>Serangan Jantung</td>
+                        </tr>
+                        <tr>
+                          <td>Serangan Panik</td>
+                        </tr>
+                        <tr>
+                          <td>Servisitis</td>
+                        </tr>
+                        <tr>
+                          <td>Sesak Napas</td>
+                        </tr>
+                        <tr>
+                          <td>Sialolithiasis (Batu Kelenjar Ludah)</td>
+                        </tr>
+                        <tr>
+                          <td>SIDS</td>
+                        </tr>
+                        <tr>
+                          <td>Sifilis</td>
+                        </tr>
+                        <tr>
+                          <td>Sindaktili</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Angelman</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Antifosfolipid</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Asherman</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Asperger</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Brugada</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Cauda Equina</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Costello</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Crigler-Najjar</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Cushing</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Dubin-Johnson</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Edward</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Ehlers-Danlos</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Eisenmenger</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Fragile X</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Gilbert</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Guillain-Barré</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Heller</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom HELLP</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Hemolitik Uremik</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Horner</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Insensitivitas Androgen</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Iritasi Usus Besar</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Kallmann</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Klinefelter</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Kompartemen</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Kostmann</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Mallory-Weiss</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Marfan</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Metabolik</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Mielodisplasia</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Nefrotik</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Noonan</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Piriformis</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Raynaud</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Rett</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Reye</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Rotor</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Serotonin</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Sheehan</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Sjögren</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Stevens-Johnson</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Tourette</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Treacher Collins</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Turner</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Wernicke-Korsakoff</td>
+                        </tr>
+                        <tr>
+                          <td>Sindrom Zollinger-Ellison</td>
+                        </tr>
+                        <tr>
+                          <td>Sinusitis</td>
+                        </tr>
+                        <tr>
+                          <td>Sirosis</td>
+                        </tr>
+                        <tr>
+                          <td>Sistiserkosis</td>
+                        </tr>
+                        <tr>
+                          <td>Skiatika</td>
+                        </tr>
+                        <tr>
+                          <td>Skistosomiasis</td>
+                        </tr>
+                        <tr>
+                          <td>Skizofrenia</td>
+                        </tr>
+                        <tr>
+                          <td>Skizofrenia Paranoid</td>
+                        </tr>
+                        <tr>
+                          <td>Skleroderma</td>
+                        </tr>
+                        <tr>
+                          <td>Skoliosis</td>
+                        </tr>
+                        <tr>
+                          <td>Skorbut</td>
+                        </tr>
+                        <tr>
+                          <td>Sleep Apnea</td>
+                        </tr>
+                        <tr>
+                          <td>Solusio Plasenta</td>
+                        </tr>
+                        <tr>
+                          <td>Spermatokel</td>
+                        </tr>
+                        <tr>
+                          <td>Spina Bifida</td>
+                        </tr>
+                        <tr>
+                          <td>Splenomegali</td>
+                        </tr>
+                        <tr>
+                          <td>Spondilosis Servikal</td>
+                        </tr>
+                        <tr>
+                          <td>Spondylolisthesis</td>
+                        </tr>
+                        <tr>
+                          <td>Staphylococcal Scalded Skin Syndrome (SSSS)</td>
+                        </tr>
+                        <tr>
+                          <td>Stenosis Pilorus</td>
+                        </tr>
+                        <tr>
+                          <td>Stenosis Spinal</td>
+                        </tr>
+                        <tr>
+                          <td>Stres</td>
+                        </tr>
+                        <tr>
+                          <td>Striktur uretra</td>
+                        </tr>
+                        <tr>
+                          <td>Stroke</td>
+                        </tr>
+                        <tr>
+                          <td>Stroke Hemoragik</td>
+                        </tr>
+                        <tr>
+                          <td>Strongyloidiasis</td>
+                        </tr>
+                        <tr>
+                          <td>Stunting</td>
+                        </tr>
+                        <tr>
+                          <td>Suara Serak</td>
+                        </tr>
+                        <tr>
+                          <td>Sunburn</td>
+                        </tr>
+                        <tr>
+                          <td>Syok</td>
+                        </tr>
+                        <tr>
+                          <td>Syok Anafilaktik</td>
+                        </tr>
+                        <tr>
+                          <td>Syok Hipovolemik</td>
+                        </tr>
+                        <tr>
+                          <td>Syok Kardiogenik</td>
+                        </tr>
+                        <tr>
+                          <td>Syok Neurogenik</td>
+                        </tr>
+                        <tr>
+                          <td>Syringomyelia</td>
+                        </tr>
+                        <tr>
+                          <td>Taeniasis</td>
+                        </tr>
+                        <tr>
+                          <td>Tahi Lalat</td>
+                        </tr>
+                        <tr>
+                          <td>Takikardia</td>
+                        </tr>
+                        <tr>
+                          <td>Takikardia Supraventrikular</td>
+                        </tr>
+                        <tr>
+                          <td>Tamponade Jantung</td>
+                        </tr>
+                        <tr>
+                          <td>Tangan Patah</td>
+                        </tr>
+                        <tr>
+                          <td>Tardive Dyskinesia</td>
+                        </tr>
+                        <tr>
+                          <td>TBC (Tuberkulosis)</td>
+                        </tr>
+                        <tr>
+                          <td>TBC Tulang Belakang</td>
+                        </tr>
+                        <tr>
+                          <td>Telangiektasis</td>
+                        </tr>
+                        <tr>
+                          <td>Tendinitis</td>
+                        </tr>
+                        <tr>
+                          <td>Tenggelam</td>
+                        </tr>
+                        <tr>
+                          <td>Tennis Elbow</td>
+                        </tr>
+                        <tr>
+                          <td>Tetanus</td>
+                        </tr>
+                        <tr>
+                          <td>Tetralogy of Fallot</td>
+                        </tr>
+                        <tr>
+                          <td>Thalasemia</td>
+                        </tr>
+                        <tr>
+                          <td>Thrombotic Thrombocytopenic Purpura</td>
+                        </tr>
+                        <tr>
+                          <td>Tifus</td>
+                        </tr>
+                        <tr>
+                          <td>Tinea Barbae</td>
+                        </tr>
+                        <tr>
+                          <td>Tinea Capitis</td>
+                        </tr>
+                        <tr>
+                          <td>Tinea Corporis</td>
+                        </tr>
+                        <tr>
+                          <td>Tinea Cruris</td>
+                        </tr>
+                        <tr>
+                          <td>Tinnitus</td>
+                        </tr>
+                        <tr>
+                          <td>Tipes</td>
+                        </tr>
+                        <tr>
+                          <td>Tiroiditis</td>
+                        </tr>
+                        <tr>
+                          <td>Tiroiditis Akut</td>
+                        </tr>
+                        <tr>
+                          <td>Tirotoksikosis</td>
+                        </tr>
+                        <tr>
+                          <td>Toksoplasmosis</td>
+                        </tr>
+                        <tr>
+                          <td>Tongue-tie (Ankyloglossia)</td>
+                        </tr>
+                        <tr>
+                          <td>Torsio Testis</td>
+                        </tr>
+                        <tr>
+                          <td>Tortikolis</td>
+                        </tr>
+                        <tr>
+                          <td>Toxic Adenoma</td>
+                        </tr>
+                        <tr>
+                          <td>Trakoma</td>
+                        </tr>
+                        <tr>
+                          <td>Transient Ischemic Attack (TIA)</td>
+                        </tr>
+                        <tr>
+                          <td>Tremor</td>
+                        </tr>
+                        <tr>
+                          <td>Trigeminal Neuralgia</td>
+                        </tr>
+                        <tr>
+                          <td>Trigliserida Tinggi</td>
+                        </tr>
+                        <tr>
+                          <td>Trikomoniasis</td>
+                        </tr>
+                        <tr>
+                          <td>Trikotilomania</td>
+                        </tr>
+                        <tr>
+                          <td>Trisomi 13</td>
+                        </tr>
+                        <tr>
+                          <td>Trombofilia</td>
+                        </tr>
+                        <tr>
+                          <td>Tromboflebitis</td>
+                        </tr>
+                        <tr>
+                          <td>Trombosis Arteri</td>
+                        </tr>
+                        <tr>
+                          <td>Trombositopenia</td>
+                        </tr>
+                        <tr>
+                          <td>Trombositosis</td>
+                        </tr>
+                        <tr>
+                          <td>Tuberous Sclerosis</td>
+                        </tr>
+                        <tr>
+                          <td>Tukak Lambung</td>
+                        </tr>
+                        <tr>
+                          <td>Tumor</td>
+                        </tr>
+                        <tr>
+                          <td>Tumor Askin</td>
+                        </tr>
+                        <tr>
+                          <td>Tumor Jinak Parotis</td>
+                        </tr>
+                        <tr>
+                          <td>Tumor Otak</td>
+                        </tr>
+                        <tr>
+                          <td>Tumor Wilms</td>
+                        </tr>
+                        <tr>
+                          <td>Turun Peranakan</td>
+                        </tr>
+                        <tr>
+                          <td>Twin to Twin Transfusion Syndrome (TTTS)</td>
+                        </tr>
+                        <tr>
+                          <td>Ulkus Dekubitus</td>
+                        </tr>
+                        <tr>
+                          <td>Ulkus Duodenum</td>
+                        </tr>
+                        <tr>
+                          <td>Ulkus Kelamin</td>
+                        </tr>
+                        <tr>
+                          <td>Ulkus Kornea</td>
+                        </tr>
+                        <tr>
+                          <td>Uretritis</td>
+                        </tr>
+                        <tr>
+                          <td>Uveitis</td>
+                        </tr>
+                        <tr>
+                          <td>Vaginismus</td>
+                        </tr>
+                        <tr>
+                          <td>Vaginitis</td>
+                        </tr>
+                        <tr>
+                          <td>Vaginosis Bakterialis</td>
+                        </tr>
+                        <tr>
+                          <td>Varikokel</td>
+                        </tr>
+                        <tr>
+                          <td>Varises</td>
+                        </tr>
+                        <tr>
+                          <td>Varises Esofagus</td>
+                        </tr>
+                        <tr>
+                          <td>Vaskulitis</td>
+                        </tr>
+                        <tr>
+                          <td>Ventricular Septal Defect</td>
+                        </tr>
+                        <tr>
+                          <td>Ventrikel Fibrilasi</td>
+                        </tr>
+                        <tr>
+                          <td>Ventrikel Takikardi</td>
+                        </tr>
+                        <tr>
+                          <td>Vertigo</td>
+                        </tr>
+                        <tr>
+                          <td>Virus Corona</td>
+                        </tr>
+                        <tr>
+                          <td>Virus Zika</td>
+                        </tr>
+                        <tr>
+                          <td>Vitiligo</td>
+                        </tr>
+                        <tr>
+                          <td>Vulvitis</td>
+                        </tr>
+                        <tr>
+                          <td>Vulvodinia</td>
+                        </tr>
+                        <tr>
+                          <td>Wasir (Hemoroid)</td>
+                        </tr>
+                        <tr>
+                          <td>Williams Syndrome</td>
+                        </tr>
+                        <tr>
+                          <td>Wilson's Disease</td>
+                        </tr>
+                        <tr>
+                          <td>Xanthelasma</td>
+                        </tr>
+                        <tr>
+                          <td>Xerophthalmia</td>
+                        </tr>
+                        <tr>
+                          <td>Xerosis</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Sobat Health 2022</span>
+            </div>
+          </div>
+        </footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>
